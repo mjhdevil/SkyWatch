@@ -75,7 +75,7 @@ public class Nav2Activity extends AppCompatActivity {
         binding = ActivityNav2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        //sss
+        //
 //        setSupportActionBar(binding.appBarNav2.toolbar);
 
 
