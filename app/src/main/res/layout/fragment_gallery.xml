@@ -7,17 +7,25 @@
     tools:context=".ui.gallery.GalleryFragment"
     android:orientation="vertical">
 
-    <fragment
-        android:name="com.moon.skywatch.Fragment1"
-        android:id="@+id/fragment1"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp" />
-    <fragment
-        android:name="com.moon.skywatch.Fragment2"
-        android:id="@+id/fragment2"
-        android:layout_weight="2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp" />
 
+
+<!--    <fragment-->
+<!--        android:name="com.moon.skywatch.Fragment1"-->
+<!--        android:id="@+id/fragment1"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp" />-->
+<!--    <fragment-->
+<!--        android:name="com.moon.skywatch.Fragment2"-->
+<!--        android:id="@+id/fragment2"-->
+<!--        android:layout_weight="2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp" />-->
+
+    <FrameLayout
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
 </LinearLayout>

@@ -27,7 +27,21 @@ public class GalleryFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View fv = inflater.inflate(R.layout.fragment_gallery, container, false);
 
+        FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        DisplayMetrics display = this.getResources().getDisplayMetrics();
 
+        int width = display.widthPixels;
+        int height = display.heightPixels;
+
+        if(width>height){
+            Fragment1 fragment1 = new Fragment1();
+            fragmentTransaction.replace(R.id.frag_container, fragment1);
+        }else{
+            Fragment2 fragment2 = new Fragment2();
+            fragmentTransaction.replace(R.id.frag_container, fragment2);
+        }
+        fragmentTransaction.commit();
 
         return fv;
     }
