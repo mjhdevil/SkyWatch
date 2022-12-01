@@ -1,20 +1,19 @@
-package com.moon.skywatch.ui.connection6;
+package com.moon.skywatch.ui.drone;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class connection6ViewModel extends ViewModel {
+public class DroneViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public connection6ViewModel() {
+    public DroneViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is connection6 fragment");
+        mText.setValue("This is slideshow fragment");
     }
 
     public LiveData<String> getText() {
         return mText;
     }
 }
-

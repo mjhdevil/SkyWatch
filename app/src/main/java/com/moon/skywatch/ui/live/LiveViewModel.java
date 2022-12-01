@@ -1,16 +1,16 @@
-package com.moon.skywatch.ui.report5;
+package com.moon.skywatch.ui.live;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class report5ViewModel extends ViewModel {
+public class LiveViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public report5ViewModel() {
+    public LiveViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is report5 fragment");
+        mText.setValue("This is gallery fragment");
     }
 
     public LiveData<String> getText() {

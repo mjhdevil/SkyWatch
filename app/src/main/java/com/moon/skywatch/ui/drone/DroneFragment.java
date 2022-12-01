@@ -1,4 +1,4 @@
-package com.moon.skywatch.ui.connection6;
+package com.moon.skywatch.ui.drone;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,23 +12,20 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-
 import com.moon.skywatch.DirectAdapter;
 import com.moon.skywatch.DirectVO;
 import com.moon.skywatch.R;
-import com.moon.skywatch.databinding.FragmentConnection6Binding;
+import com.moon.skywatch.databinding.FragmentPositionBinding;
 
 import java.util.ArrayList;
 
 
-public class connection6Fragment extends Fragment {
-
-
+public class DroneFragment extends Fragment {
     ArrayList<DirectVO> datas;
     RecyclerView rcv;
     DirectAdapter adapter;
 
-    private FragmentConnection6Binding binding;
+    private FragmentPositionBinding binding;
 
     ViewGroup viewGroup;
 
@@ -36,28 +33,9 @@ public class connection6Fragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container, Bundle savedInstanceState) {
 
-//        connection6ViewModel connection6ViewModel =
-//               new ViewModelProvider(this).get(connection6ViewModel.class);
-
-//        binding = FragmentConnection6Binding.inflate(inflater, container, false);
-//        View root = binding.getRoot();
-
-////        final TextView textView = binding.textConnection6;
-////        connection6ViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-//        return root;
 
 
-//        View view = inflater.inflate(R.layout.fragment_connection6, container, false);
-//        rcv = (RecyclerView) view.findViewById(R.id.RecyclerView);
-//        rcv.setHasFixedSize(true);
-//        mLayoutManager = new LinearLayoutManager(getActivity());
-//        rcv.setLayoutManager(mLayoutManager);
-//        rcv.scrollToPosition(0);
-//        rcv.setAdapter(adapter);
-//        rcv.setItemAnimator(new DefaultItemAnimator());
-//        return view;
-
-        viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_connection6, container, false);
+        viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_drone, container, false);
 
         rcv = viewGroup.findViewById(R.id.RecyclerView);
         rcv.setHasFixedSize(true);
@@ -98,7 +76,3 @@ public class connection6Fragment extends Fragment {
     }
 
 }
-
-
-
-    

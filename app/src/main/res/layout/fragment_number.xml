@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.report5.report5Fragment" >
+    tools:context=".ui.number.NumberFragment" >
 
     <TextView
-        android:id="@+id/text_report5"
+        android:id="@+id/text_number4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

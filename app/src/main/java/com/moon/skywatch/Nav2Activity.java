@@ -1,19 +1,14 @@
 package com.moon.skywatch;
 
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
-import android.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
 import com.moon.skywatch.databinding.ActivityNav2Binding;
-import com.moon.skywatch.ui.gallery.GalleryFragment;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.GravityCompat;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -54,8 +49,8 @@ public class Nav2Activity extends AppCompatActivity {
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_number4, R.id.nav_report5, R.id.nav_connection6)
+                R.id.nav_home, R.id.nav_live, R.id.nav_position,
+                R.id.nav_number, R.id.nav_report, R.id.nav_drone)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_nav2);

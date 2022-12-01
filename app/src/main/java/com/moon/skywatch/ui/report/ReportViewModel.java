@@ -1,16 +1,16 @@
-package com.moon.skywatch.ui.number4;
+package com.moon.skywatch.ui.report;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class number4ViewModel extends ViewModel {
+public class ReportViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public number4ViewModel() {
+    public ReportViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is number4 fragment");
+        mText.setValue("This is report5 fragment");
     }
 
     public LiveData<String> getText() {

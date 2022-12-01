@@ -13,11 +13,6 @@ public class ChildFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_child, container, false);
-    }
 
 
     @Override

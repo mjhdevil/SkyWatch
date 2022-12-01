@@ -1,4 +1,4 @@
-package com.moon.skywatch.ui.slideshow;
+package com.moon.skywatch.ui.position;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,20 +8,22 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+
 import com.google.android.gms.maps.MapView;
 import com.moon.skywatch.R;
-import com.moon.skywatch.databinding.FragmentConnection6Binding;
+import com.moon.skywatch.databinding.FragmentPositionBinding;
 
 
-public class SlideshowFragment extends Fragment {
+public class PositionFragment extends Fragment {
+
 
     ViewGroup viewGroup;
-    private FragmentConnection6Binding binding;
+    private FragmentPositionBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_slideshow, container, false);
+        viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_position, container, false);
 
         MapView mapView = new MapView(getContext());
 
@@ -40,6 +42,11 @@ public class SlideshowFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+
     }
 
 }
+
+
+
+    

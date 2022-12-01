@@ -1,4 +1,4 @@
-package com.moon.skywatch.ui.gallery;
+package com.moon.skywatch.ui.live;
 
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -14,7 +14,7 @@ import com.moon.skywatch.Fragment1;
 import com.moon.skywatch.Fragment2;
 import com.moon.skywatch.R;
 
-public class GalleryFragment extends Fragment {
+public class LiveFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +25,7 @@ public class GalleryFragment extends Fragment {
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View fv = inflater.inflate(R.layout.fragment_gallery, container, false);
+        View fv = inflater.inflate(R.layout.fragment_live, container, false);
 
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
